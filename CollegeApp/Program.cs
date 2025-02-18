@@ -22,6 +22,8 @@ builder.Services.AddDbContext<CollegeDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"))
 );
 
+builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
+
 // Add Controllers & Configure JSON Options
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
