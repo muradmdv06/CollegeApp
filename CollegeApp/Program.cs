@@ -1,39 +1,42 @@
+using CollegeApp.Configurations;
 using CollegeApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System.Text.Json.Serialization;
+using AutoMapper;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Logging.ClearProviders();
 
-builder.Logging.AddLog4Net();
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
+// Add Database Context
 builder.Services.AddDbContext<CollegeDBContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"));
-});
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"))
+);
 
-#region Serilog Settings
-//Log.Logger = new LoggerConfiguration().
-//    MinimumLevel.Information()
-//    .WriteTo.File("Log/log.txt",
-//    rollingInterval:RollingInterval.Minute)
-//    .CreateLogger();
+// Add Controllers & Configure JSON Options
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+    });
 
-//builder.Host.UseSerilog();
-
-#endregion 
-
-// Add services to the container.
-builder.Services.AddControllers().AddJsonOptions(options =>
-{
-
-    options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Register AutoMapper
+
+
 // Enable CORS
-builder.Services.AddCors(options => 
+builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
         policy.AllowAnyOrigin()
@@ -52,11 +55,7 @@ if (app.Environment.IsDevelopment())
 
 // Middleware configuration
 app.UseHttpsRedirection();
-
 app.UseCors("AllowAll"); // Enable CORS
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
