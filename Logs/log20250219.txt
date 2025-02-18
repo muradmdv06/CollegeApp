@@ -1,0 +1,212 @@
+2025-02-19 00:53:27.283 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-19 00:53:27.314 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-19 00:53:27.317 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-19 00:53:27.318 +04:00 [INF] Hosting environment: Development
+2025-02-19 00:53:27.318 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-19 00:53:28.215 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-19 00:53:28.578 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 368.3712ms
+2025-02-19 00:53:28.590 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-19 00:53:28.593 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.7326ms
+2025-02-19 00:53:28.609 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-19 00:53:28.613 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-19 00:53:28.648 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 35.6103ms
+2025-02-19 00:53:28.706 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.9353ms
+2025-02-19 00:53:28.802 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-19 00:53:29.074 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 272.8851ms
+2025-02-19 00:53:33.364 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-19 00:53:33.374 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-19 00:53:33.404 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-19 00:53:33.650 +04:00 [INF] Fetching all students from the database.
+2025-02-19 00:53:34.917 +04:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-19 00:53:35.023 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-19 00:53:35.054 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 1643.5406ms
+2025-02-19 00:53:35.055 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-19 00:53:35.065 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 1701.2363ms
+2025-02-19 00:55:58.147 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-19 00:55:58.178 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-19 00:55:58.181 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-19 00:55:58.181 +04:00 [INF] Hosting environment: Development
+2025-02-19 00:55:58.181 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-19 00:55:58.790 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-19 00:55:59.143 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 358.141ms
+2025-02-19 00:55:59.150 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-19 00:55:59.153 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-19 00:55:59.155 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 2.4346ms
+2025-02-19 00:55:59.158 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-19 00:55:59.176 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 25.9364ms
+2025-02-19 00:55:59.233 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.6761ms
+2025-02-19 00:55:59.292 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-19 00:55:59.512 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 220.1742ms
+2025-02-19 00:56:05.592 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-19 00:56:05.611 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-19 00:56:05.638 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-19 00:56:05.764 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 122.4166ms
+2025-02-19 00:56:05.766 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-19 00:56:05.771 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CollegeApp.Data.Repository.IStudentRepository' while attempting to activate 'CollegeApp.Controllers.StudentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 00:56:05.833 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 240.5181ms
+2025-02-19 00:57:55.633 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-19 00:57:55.663 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-19 00:57:55.666 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-19 00:57:55.667 +04:00 [INF] Hosting environment: Development
+2025-02-19 00:57:55.667 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-19 00:57:56.484 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-19 00:57:56.723 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 247.6946ms
+2025-02-19 00:57:56.754 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-19 00:57:56.755 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-19 00:57:56.755 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-19 00:57:56.761 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 8.6687ms
+2025-02-19 00:57:56.773 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 17.7651ms
+2025-02-19 00:57:56.846 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.5589ms
+2025-02-19 00:57:56.897 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-19 00:57:57.124 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 226.3542ms
+2025-02-19 00:58:00.827 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-19 00:58:00.838 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-19 00:58:00.870 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-19 00:58:01.212 +04:00 [INF] Fetching all students.
+2025-02-19 00:58:01.364 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 490.1034ms
+2025-02-19 00:58:01.365 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-19 00:58:01.368 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<CollegeApp.Data.Student>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at CollegeApp.Data.Repository.StudentRepository.GetAllAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repository\StudentRepository.cs:line 38
+   at CollegeApp.Controllers.StudentController.GetStudents() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\StudentController.cs:line 32
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 00:58:01.418 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 590.6643ms
+2025-02-19 00:59:04.294 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-19 00:59:04.348 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-19 00:59:04.352 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-19 00:59:04.353 +04:00 [INF] Hosting environment: Development
+2025-02-19 00:59:04.353 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-19 00:59:05.219 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-19 00:59:05.555 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 348.3473ms
+2025-02-19 00:59:05.599 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-19 00:59:05.600 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-19 00:59:05.602 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 2.9711ms
+2025-02-19 00:59:05.602 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-19 00:59:05.631 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 31.8299ms
+2025-02-19 00:59:05.681 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.3706ms
+2025-02-19 00:59:05.745 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-19 00:59:05.949 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 203.8891ms
+2025-02-19 00:59:09.369 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-19 00:59:09.413 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-19 00:59:09.443 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-19 00:59:09.761 +04:00 [INF] Fetching all students.
+2025-02-19 00:59:09.856 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 409.5855ms
+2025-02-19 00:59:09.857 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-19 00:59:09.861 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<CollegeApp.Data.Student>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at CollegeApp.Data.Repository.StudentRepository.GetAllAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repository\StudentRepository.cs:line 38
+   at CollegeApp.Controllers.StudentController.GetStudents() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\StudentController.cs:line 32
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 00:59:09.900 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 531.0396ms
+2025-02-19 00:59:40.515 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students/3 - null null
+2025-02-19 00:59:40.531 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp)'
+2025-02-19 00:59:40.580 +04:00 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.StudentDTO]] GetStudentById(Int32) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-19 00:59:41.359 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp) in 779.5981ms
+2025-02-19 00:59:41.360 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp)'
+2025-02-19 00:59:41.360 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source)
+   at CollegeApp.Data.Repository.StudentRepository.GetByIdAsync(Int32 id, Boolean useNoTracking) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repository\StudentRepository.cs:line 46
+   at CollegeApp.Controllers.StudentController.GetStudentById(Int32 id) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\StudentController.cs:line 41
+   at lambda_method15(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 00:59:41.366 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students/3 - 500 null text/plain; charset=utf-8 851.3444ms
+2025-02-19 01:02:19.809 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students/name/students from hyd - null null
+2025-02-19 01:02:19.810 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudentByName (CollegeApp)'
+2025-02-19 01:02:19.813 +04:00 [INF] Route matched with {action = "GetStudentByName", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.StudentDTO]] GetStudentByName(System.String) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-19 01:02:19.939 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudentByName (CollegeApp) in 125.3983ms
+2025-02-19 01:02:19.939 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudentByName (CollegeApp)'
+2025-02-19 01:02:19.940 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source)
+   at CollegeApp.Data.Repository.StudentRepository.GetByNameAsync(String name) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repository\StudentRepository.cs:line 52
+   at CollegeApp.Controllers.StudentController.GetStudentByName(String name) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\StudentController.cs:line 52
+   at lambda_method30(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 01:02:19.943 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students/name/students from hyd - 500 null text/plain; charset=utf-8 134.4247ms

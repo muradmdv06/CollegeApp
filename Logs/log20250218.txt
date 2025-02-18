@@ -1,0 +1,509 @@
+2025-02-18 00:35:54.692 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 00:35:54.745 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 00:35:54.749 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 00:35:54.750 +04:00 [INF] Hosting environment: Development
+2025-02-18 00:35:54.750 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 00:35:56.547 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 00:35:57.053 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 00:35:57.054 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.css - null null
+2025-02-18 00:35:57.064 +04:00 [INF] The file /index.css was not modified
+2025-02-18 00:35:57.067 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 00:35:57.068 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 501.0674ms
+2025-02-18 00:35:57.068 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.css - 304 null text/css 11.2382ms
+2025-02-18 00:35:57.069 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 14.8502ms
+2025-02-18 00:35:57.074 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 00:35:57.077 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 24.3209ms
+2025-02-18 00:35:57.167 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.797ms
+2025-02-18 00:35:57.377 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 00:35:57.705 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 327.8291ms
+2025-02-18 00:37:07.660 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 00:37:07.668 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 00:37:07.711 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Data.Student]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 00:37:08.028 +04:00 [INF] Fetching all students from the database.
+2025-02-18 00:37:09.858 +04:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 00:37:09.947 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Data.Student, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 00:37:09.986 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 2271.092ms
+2025-02-18 00:37:09.987 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 00:37:09.997 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 2337.3236ms
+2025-02-18 00:37:43.622 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7194/api/students/update - application/json 94
+2025-02-18 00:37:43.649 +04:00 [INF] CORS policy execution successful.
+2025-02-18 00:37:43.654 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.UpdateResult (CollegeApp)'
+2025-02-18 00:37:43.669 +04:00 [INF] Route matched with {action = "UpdateResult", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateResult(CollegeApp.Models.StudentDTO) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 00:37:43.977 +04:00 [INF] Executed DbCommand (36ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2025-02-18 00:37:44.090 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.UpdateResult (CollegeApp) in 420.3343ms
+2025-02-18 00:37:44.091 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.UpdateResult (CollegeApp)'
+2025-02-18 00:37:44.093 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Student' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at CollegeApp.Controllers.StudentController.UpdateResult(StudentDTO model) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\StudentController.cs:line 148
+   at lambda_method55(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-18 00:37:44.151 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7194/api/students/update - 500 null text/plain; charset=utf-8 529.0525ms
+2025-02-18 00:37:54.973 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7194/api/students/update - application/json 94
+2025-02-18 00:37:54.975 +04:00 [INF] CORS policy execution successful.
+2025-02-18 00:37:54.975 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.UpdateResult (CollegeApp)'
+2025-02-18 00:37:54.975 +04:00 [INF] Route matched with {action = "UpdateResult", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateResult(CollegeApp.Models.StudentDTO) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 00:37:54.983 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-02-18 00:37:54.983 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.UpdateResult (CollegeApp) in 7.8252ms
+2025-02-18 00:37:54.983 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.UpdateResult (CollegeApp)'
+2025-02-18 00:37:54.984 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7194/api/students/update - 400 null text/plain; charset=utf-8 10.7209ms
+2025-02-18 00:38:06.589 +04:00 [INF] Request starting HTTP/2 PATCH https://localhost:7194/api/students/updatepartial/1 - application/json 28
+2025-02-18 00:38:06.589 +04:00 [INF] CORS policy execution successful.
+2025-02-18 00:38:06.589 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.UpdateStudentPartial (CollegeApp)'
+2025-02-18 00:38:06.603 +04:00 [INF] Route matched with {action = "UpdateStudentPartial", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateStudentPartial(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[CollegeApp.Models.StudentDTO]) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 00:38:06.623 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.UpdateStudentPartial (CollegeApp) in 20.2448ms
+2025-02-18 00:38:06.624 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.UpdateStudentPartial (CollegeApp)'
+2025-02-18 00:38:06.629 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Deserialization of interface or abstract types is not supported. Type 'Newtonsoft.Json.Serialization.IContractResolver'. Path: $.contractResolver | LineNumber: 1 | BytePositionInLine: 23.
+ ---> System.NotSupportedException: Deserialization of interface or abstract types is not supported. Type 'Newtonsoft.Json.Serialization.IContractResolver'.
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(ReadStack& state, Utf8JsonReader& reader, Exception innerException)
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException_DeserializeNoConstructor(JsonTypeInfo typeInfo, Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-18 00:38:06.639 +04:00 [INF] Request finished HTTP/2 PATCH https://localhost:7194/api/students/updatepartial/1 - 500 null text/plain; charset=utf-8 50.563ms
+2025-02-18 00:38:29.313 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7194/api/students/1 - null null
+2025-02-18 00:38:29.317 +04:00 [INF] CORS policy execution successful.
+2025-02-18 00:38:29.317 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.DeleteStudent (CollegeApp)'
+2025-02-18 00:38:29.324 +04:00 [INF] Route matched with {action = "DeleteStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] DeleteStudent(Int32) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 00:38:29.404 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2025-02-18 00:38:29.505 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Students]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-02-18 00:38:29.518 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2025-02-18 00:38:29.521 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.DeleteStudent (CollegeApp) in 196.8779ms
+2025-02-18 00:38:29.521 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.DeleteStudent (CollegeApp)'
+2025-02-18 00:38:29.521 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7194/api/students/1 - 200 null application/json; charset=utf-8 208.5866ms
+2025-02-18 00:38:38.052 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 00:38:38.053 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 00:38:38.053 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Data.Student]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 00:38:38.053 +04:00 [INF] Fetching all students from the database.
+2025-02-18 00:38:38.059 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 00:38:38.060 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Data.Student, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 00:38:38.060 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 7.2855ms
+2025-02-18 00:38:38.060 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 00:38:38.061 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 8.326ms
+2025-02-18 00:39:23.916 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7194/api/students/create - application/json 98
+2025-02-18 00:39:23.916 +04:00 [INF] CORS policy execution successful.
+2025-02-18 00:39:23.917 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.CreateStudent (CollegeApp)'
+2025-02-18 00:39:23.929 +04:00 [INF] Route matched with {action = "CreateStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.StudentDTO]] CreateStudent(CollegeApp.Models.StudentDTO) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 00:39:23.963 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 500), @p1='?' (Size = 250), @p2='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([Address], [Email], [StudentName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-02-18 00:39:23.989 +04:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CollegeApp.Models.StudentDTO'.
+2025-02-18 00:39:24.016 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.CreateStudent (CollegeApp) in 87.4226ms
+2025-02-18 00:39:24.016 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.CreateStudent (CollegeApp)'
+2025-02-18 00:39:24.016 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7194/api/students/create - 201 null application/json; charset=utf-8 100.7996ms
+2025-02-18 00:39:35.126 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 00:39:35.126 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 00:39:35.127 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Data.Student]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 00:39:35.127 +04:00 [INF] Fetching all students from the database.
+2025-02-18 00:39:35.141 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 00:39:35.142 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Data.Student, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 00:39:35.143 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 15.8375ms
+2025-02-18 00:39:35.143 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 00:39:35.143 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 16.9752ms
+2025-02-18 09:33:54.164 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 09:33:54.217 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 09:33:54.222 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 09:33:54.222 +04:00 [INF] Hosting environment: Development
+2025-02-18 09:33:54.222 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 09:33:57.186 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 09:33:58.024 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 842.1397ms
+2025-02-18 09:33:58.073 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 09:33:58.122 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 09:33:58.131 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 8.0674ms
+2025-02-18 09:33:58.132 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 09:33:58.145 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 71.6078ms
+2025-02-18 09:33:58.437 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 305.2683ms
+2025-02-18 09:33:58.578 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 09:33:59.036 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 458.7246ms
+2025-02-18 11:06:29.633 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 11:06:29.674 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 11:06:29.677 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 11:06:29.677 +04:00 [INF] Hosting environment: Development
+2025-02-18 11:06:29.677 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 11:06:30.396 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 11:06:30.844 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 439.9198ms
+2025-02-18 11:06:30.919 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 11:06:30.959 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 11:06:30.969 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 11:06:30.969 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 5.2068ms
+2025-02-18 11:06:30.971 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 51.9826ms
+2025-02-18 11:06:31.038 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.1067ms
+2025-02-18 11:06:31.184 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 11:06:31.603 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 418.5413ms
+2025-02-18 11:45:19.065 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 11:45:19.117 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 11:45:19.121 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 11:45:19.121 +04:00 [INF] Hosting environment: Development
+2025-02-18 11:45:19.121 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 11:45:20.203 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 11:45:20.609 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 420.0945ms
+2025-02-18 11:45:20.665 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 11:45:20.665 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 11:45:20.670 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 4.6491ms
+2025-02-18 11:45:20.673 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 11:45:20.701 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 35.4088ms
+2025-02-18 11:45:20.770 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.0931ms
+2025-02-18 11:45:20.857 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 11:45:21.172 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 315.5092ms
+2025-02-18 11:45:24.529 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 11:45:24.562 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 11:45:24.635 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 11:45:25.326 +04:00 [INF] Fetching all students from the database.
+2025-02-18 11:45:28.142 +04:00 [INF] Executed DbCommand (191ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 11:45:28.396 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 11:45:28.475 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 3831.2432ms
+2025-02-18 11:45:28.476 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 11:45:28.495 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 3966.0433ms
+2025-02-18 11:45:36.150 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students/3 - null null
+2025-02-18 11:45:36.155 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp)'
+2025-02-18 11:45:36.242 +04:00 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.StudentDTO]] GetStudentById(Int32) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 11:45:36.786 +04:00 [INF] Executed DbCommand (91ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2025-02-18 11:45:36.802 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.StudentDTO'.
+2025-02-18 11:45:36.803 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp) in 560.2109ms
+2025-02-18 11:45:36.803 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp)'
+2025-02-18 11:45:36.804 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students/3 - 200 null application/json; charset=utf-8 654.0518ms
+2025-02-18 11:46:13.137 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students/name/Murad - null null
+2025-02-18 11:46:13.149 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudentByName (CollegeApp)'
+2025-02-18 11:46:13.159 +04:00 [INF] Route matched with {action = "GetStudentByName", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.StudentDTO]] GetStudentByName(System.String) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 11:46:13.396 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@__name_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[StudentName] = @__name_0
+2025-02-18 11:46:13.399 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.StudentDTO'.
+2025-02-18 11:46:13.399 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudentByName (CollegeApp) in 240.2406ms
+2025-02-18 11:46:13.399 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudentByName (CollegeApp)'
+2025-02-18 11:46:13.400 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students/name/Murad - 200 null application/json; charset=utf-8 263.4841ms
+2025-02-18 11:47:25.362 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7194/api/students/create - application/json 86
+2025-02-18 11:47:25.371 +04:00 [INF] CORS policy execution successful.
+2025-02-18 11:47:25.373 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.CreateStudent (CollegeApp)'
+2025-02-18 11:47:25.384 +04:00 [INF] Route matched with {action = "CreateStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.StudentDTO]] CreateStudent(CollegeApp.Models.StudentDTO) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 11:47:25.718 +04:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (Size = 500), @p1='?' (Size = 250), @p2='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([Address], [Email], [StudentName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-02-18 11:47:25.773 +04:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CollegeApp.Models.StudentDTO'.
+2025-02-18 11:47:25.841 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.CreateStudent (CollegeApp) in 456.3255ms
+2025-02-18 11:47:25.841 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.CreateStudent (CollegeApp)'
+2025-02-18 11:47:25.841 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7194/api/students/create - 201 null application/json; charset=utf-8 480.1515ms
+2025-02-18 11:47:47.040 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 11:47:47.041 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 11:47:47.043 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 11:47:47.044 +04:00 [INF] Fetching all students from the database.
+2025-02-18 11:47:47.065 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 11:47:47.066 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 11:47:47.066 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 23.5366ms
+2025-02-18 11:47:47.067 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 11:47:47.067 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 26.7979ms
+2025-02-18 11:50:51.385 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7194/api/students/update - application/json 118
+2025-02-18 11:50:51.387 +04:00 [INF] CORS policy execution successful.
+2025-02-18 11:50:51.387 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.UpdateStudent (CollegeApp)'
+2025-02-18 11:50:51.398 +04:00 [INF] Route matched with {action = "UpdateStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateStudent(CollegeApp.Models.StudentDTO) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 11:50:51.432 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2025-02-18 11:50:51.457 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [StudentName] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-02-18 11:50:51.472 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-18 11:50:51.472 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.UpdateStudent (CollegeApp) in 73.9129ms
+2025-02-18 11:50:51.472 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.UpdateStudent (CollegeApp)'
+2025-02-18 11:50:51.473 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7194/api/students/update - 204 null null 87.3546ms
+2025-02-18 11:50:59.610 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 11:50:59.611 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 11:50:59.611 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 11:50:59.611 +04:00 [INF] Fetching all students from the database.
+2025-02-18 11:50:59.632 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 11:50:59.633 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 11:50:59.633 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 22.4748ms
+2025-02-18 11:50:59.633 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 11:50:59.634 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 23.503ms
+2025-02-18 12:05:12.271 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7194/api/students/5 - null null
+2025-02-18 12:05:12.272 +04:00 [INF] CORS policy execution successful.
+2025-02-18 12:05:12.272 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.DeleteStudent (CollegeApp)'
+2025-02-18 12:05:12.288 +04:00 [INF] Route matched with {action = "DeleteStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] DeleteStudent(Int32) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 12:05:12.348 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2025-02-18 12:05:12.372 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Students]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-02-18 12:05:12.379 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2025-02-18 12:05:12.385 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.DeleteStudent (CollegeApp) in 96.9754ms
+2025-02-18 12:05:12.386 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.DeleteStudent (CollegeApp)'
+2025-02-18 12:05:12.386 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7194/api/students/5 - 200 null application/json; charset=utf-8 115.8826ms
+2025-02-18 12:05:19.227 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 12:05:19.228 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 12:05:19.228 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 12:05:19.228 +04:00 [INF] Fetching all students from the database.
+2025-02-18 12:05:19.235 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 12:05:19.236 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 12:05:19.236 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 8.1677ms
+2025-02-18 12:05:19.236 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 12:05:19.236 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 9.5417ms
+2025-02-18 22:20:38.352 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 22:20:38.408 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 22:20:38.414 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 22:20:38.415 +04:00 [INF] Hosting environment: Development
+2025-02-18 22:20:38.415 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 22:20:39.836 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 22:20:40.639 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 822.4904ms
+2025-02-18 22:20:40.640 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 22:20:40.645 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 22:20:40.647 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 2.6676ms
+2025-02-18 22:20:40.648 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 22:20:40.670 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 29.3391ms
+2025-02-18 22:20:40.902 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 254.3496ms
+2025-02-18 22:20:40.974 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 22:20:41.770 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 795.3337ms
+2025-02-18 22:20:47.946 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 22:20:47.963 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:20:48.009 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 22:20:48.344 +04:00 [INF] Fetching all students from the database.
+2025-02-18 22:20:50.012 +04:00 [INF] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 22:20:50.131 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 22:20:50.170 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 2156.8243ms
+2025-02-18 22:20:50.170 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:20:50.182 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 2236.0049ms
+2025-02-18 22:23:41.053 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 22:23:41.092 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 22:23:41.094 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 22:23:41.095 +04:00 [INF] Hosting environment: Development
+2025-02-18 22:23:41.095 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 22:23:42.348 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 22:23:42.649 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 302.6421ms
+2025-02-18 22:23:42.722 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 22:23:42.725 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 22:23:42.727 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 4.8412ms
+2025-02-18 22:23:42.727 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 22:23:42.871 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 145.4956ms
+2025-02-18 22:23:43.245 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 518.1591ms
+2025-02-18 22:23:43.296 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 22:23:43.508 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 211.5498ms
+2025-02-18 22:23:46.861 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 22:23:46.874 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:23:46.898 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 22:23:47.181 +04:00 [INF] Fetching all students from the database.
+2025-02-18 22:23:48.671 +04:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 22:23:48.804 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 22:23:48.839 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 1937.3067ms
+2025-02-18 22:23:48.839 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:23:48.860 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 1999.4469ms
+2025-02-18 22:29:34.988 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 22:29:35.016 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 22:29:35.018 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 22:29:35.019 +04:00 [INF] Hosting environment: Development
+2025-02-18 22:29:35.019 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 22:29:35.491 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 22:29:35.931 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 447.7438ms
+2025-02-18 22:29:35.939 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 22:29:35.940 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 22:29:35.945 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 22:29:35.959 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 19.4007ms
+2025-02-18 22:29:35.960 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 14.4071ms
+2025-02-18 22:29:36.013 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.7582ms
+2025-02-18 22:29:36.252 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 22:29:36.572 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 321.3741ms
+2025-02-18 22:29:43.681 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 22:29:43.694 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:29:43.740 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 22:29:44.015 +04:00 [INF] Fetching all students from the database.
+2025-02-18 22:29:45.579 +04:00 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 22:29:45.708 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 22:29:45.749 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 2003.1879ms
+2025-02-18 22:29:45.751 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:29:45.768 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 2087.4453ms
+2025-02-18 22:34:56.088 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 22:34:56.116 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 22:34:56.118 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 22:34:56.119 +04:00 [INF] Hosting environment: Development
+2025-02-18 22:34:56.119 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 22:34:56.841 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 22:34:57.269 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 440.5618ms
+2025-02-18 22:34:57.312 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 22:34:57.312 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 22:34:57.315 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.4227ms
+2025-02-18 22:34:57.319 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 22:34:57.335 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 23.1264ms
+2025-02-18 22:34:57.457 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 137.7774ms
+2025-02-18 22:34:57.631 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 22:34:57.975 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 345.2373ms
+2025-02-18 22:35:25.592 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 22:35:25.597 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 4.6129ms
+2025-02-18 22:35:25.612 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 22:35:25.613 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 0.6693ms
+2025-02-18 22:35:25.618 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 22:35:25.618 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 22:35:25.622 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.4143ms
+2025-02-18 22:35:25.664 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.0501ms
+2025-02-18 22:35:25.710 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 22:35:25.730 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.9329ms
+2025-02-18 22:35:30.070 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 22:35:30.078 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:35:30.098 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 22:35:30.331 +04:00 [INF] Fetching all students from the database.
+2025-02-18 22:35:31.555 +04:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 22:35:31.631 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 22:35:31.669 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 1567.3807ms
+2025-02-18 22:35:31.671 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:35:31.684 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 1614.803ms
+2025-02-18 22:38:04.784 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 22:38:04.832 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 22:38:04.836 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 22:38:04.836 +04:00 [INF] Hosting environment: Development
+2025-02-18 22:38:04.836 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 22:38:05.211 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 22:38:05.515 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 309.2537ms
+2025-02-18 22:38:05.538 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 22:38:05.538 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 22:38:05.539 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 22:38:05.549 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 11.099ms
+2025-02-18 22:38:05.554 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 15.38ms
+2025-02-18 22:38:05.638 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.5924ms
+2025-02-18 22:38:05.729 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 22:38:06.012 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 283.2293ms
+2025-02-18 22:38:09.584 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 22:38:09.596 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:38:09.622 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 22:38:09.898 +04:00 [INF] Fetching all students from the database.
+2025-02-18 22:38:11.420 +04:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 22:38:11.570 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 22:38:11.611 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 1984.9501ms
+2025-02-18 22:38:11.612 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:38:11.623 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 2038.2813ms
+2025-02-18 22:38:17.253 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-18 22:38:17.255 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:38:17.256 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 22:38:17.258 +04:00 [INF] Fetching all students from the database.
+2025-02-18 22:38:17.302 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-18 22:38:17.303 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 22:38:17.304 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 48.2086ms
+2025-02-18 22:38:17.304 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-18 22:38:17.304 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 51.103ms
+2025-02-18 22:46:34.360 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-18 22:46:34.401 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-18 22:46:34.404 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 22:46:34.405 +04:00 [INF] Hosting environment: Development
+2025-02-18 22:46:34.405 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-18 22:46:35.423 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-18 22:46:35.722 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 305.8614ms
+2025-02-18 22:46:35.733 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 22:46:35.733 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-18 22:46:35.736 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.7468ms
+2025-02-18 22:46:35.749 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-18 22:46:35.753 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 20.5988ms
+2025-02-18 22:46:35.830 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.0461ms
+2025-02-18 22:46:35.888 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-18 22:46:36.138 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.2811ms
+2025-02-18 22:46:46.527 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students/3 - null null
+2025-02-18 22:46:46.540 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp)'
+2025-02-18 22:46:46.589 +04:00 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.StudentDTO]] GetStudentById(Int32) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-18 22:46:49.439 +04:00 [INF] Executed DbCommand (91ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2025-02-18 22:46:49.571 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.StudentDTO'.
+2025-02-18 22:46:49.604 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp) in 3010.2825ms
+2025-02-18 22:46:49.604 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp)'
+2025-02-18 22:46:49.613 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students/3 - 200 null application/json; charset=utf-8 3086.5839ms
