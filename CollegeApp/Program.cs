@@ -6,10 +6,11 @@ using System.Text.Json.Serialization;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using CollegeApp.Data.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Serilog
+// Configure Serilog for logging
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
@@ -17,27 +18,29 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-// Add Database Context
+// Configure Database Context
 builder.Services.AddDbContext<CollegeDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"))
 );
 
-builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
+// Register AutoMapper
+builder.Services.AddAutoMapper(typeof(AutoMapperConfig).Assembly);
 
-// Add Controllers & Configure JSON Options
+// Register repositories
+builder.Services.AddTransient<IStudentRepository, StudentRepository>();
+
+// Configure Controllers with JSON serialization options
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
     });
 
+// Enable Swagger for API documentation
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Register AutoMapper
-
-
-// Enable CORS
+// Configure CORS policy
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -48,16 +51,18 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Enable Swagger only in Development mode
+// Enable Swagger UI only in Development
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// Middleware configuration
 app.UseHttpsRedirection();
-app.UseCors("AllowAll"); // Enable CORS
+
+app.UseRouting();  // Ensures correct request routing
+app.UseCors("AllowAll");
 app.UseAuthorization();
+
 app.MapControllers();
 app.Run();
