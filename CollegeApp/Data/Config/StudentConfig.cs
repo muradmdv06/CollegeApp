@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CollegeApp.Data.Config
@@ -34,6 +34,12 @@ namespace CollegeApp.Data.Config
                     Address = "Beyleqan,Azerbaijan" // Fixed spelling of "Bangalore"
                 }
             });
+
+            builder.HasOne(n => n.Department)
+                .WithMany(n => n.Students)
+                .HasForeignKey(n => n.DepartmentId)
+                .HasConstraintName("FK_Students_Department");
+
 
         }
 
