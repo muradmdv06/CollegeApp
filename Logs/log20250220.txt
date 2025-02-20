@@ -1,0 +1,486 @@
+2025-02-20 09:44:18.949 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-20 09:44:19.022 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-20 09:44:19.028 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-20 09:44:19.028 +04:00 [INF] Hosting environment: Development
+2025-02-20 09:44:19.029 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-20 09:44:21.196 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-20 09:44:21.714 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 524.7ms
+2025-02-20 09:44:21.757 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-20 09:44:21.762 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-20 09:44:21.779 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-20 09:44:21.797 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 39.6121ms
+2025-02-20 09:44:21.805 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 43.3811ms
+2025-02-20 09:44:21.953 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 174.2521ms
+2025-02-20 09:44:22.131 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-20 09:44:22.467 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 335.6847ms
+2025-02-20 09:44:26.886 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-20 09:44:26.918 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 09:44:26.953 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 09:44:27.359 +04:00 [INF] Fetching all students.
+2025-02-20 09:44:39.497 +04:00 [INF] Executed DbCommand (132ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-02-20 09:44:52.459 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CollegeApp.Models.StudentDTO, CollegeApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-20 09:44:52.488 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 25529.9243ms
+2025-02-20 09:44:52.489 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 09:44:52.499 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 200 null application/json; charset=utf-8 25613.4264ms
+2025-02-20 09:46:30.164 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-20 09:46:30.220 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-20 09:46:30.224 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-20 09:46:30.225 +04:00 [INF] Hosting environment: Development
+2025-02-20 09:46:30.225 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-20 09:46:30.774 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-20 09:46:31.185 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 426.6755ms
+2025-02-20 09:46:31.250 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-20 09:46:31.250 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-20 09:46:31.253 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.5039ms
+2025-02-20 09:46:31.253 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-20 09:46:31.291 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 41.2689ms
+2025-02-20 09:46:31.324 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.3924ms
+2025-02-20 09:46:31.399 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-20 09:46:31.711 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 311.5639ms
+2025-02-20 09:46:38.788 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students/3 - null null
+2025-02-20 09:46:38.847 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp)'
+2025-02-20 09:46:38.917 +04:00 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.StudentDTO]] GetStudentById(Int32) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 09:46:42.442 +04:00 [INF] Executed DbCommand (154ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0
+2025-02-20 09:46:42.632 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.StudentDTO'.
+2025-02-20 09:46:42.709 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp) in 3784.7141ms
+2025-02-20 09:46:42.710 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudentById (CollegeApp)'
+2025-02-20 09:46:42.726 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students/3 - 200 null application/json; charset=utf-8 3937.5862ms
+2025-02-20 09:47:46.034 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7194/api/students/5 - application/json 88
+2025-02-20 09:47:46.053 +04:00 [INF] CORS policy execution successful.
+2025-02-20 09:47:46.055 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.EditStudent (CollegeApp)'
+2025-02-20 09:47:46.067 +04:00 [INF] Route matched with {action = "EditStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] EditStudent(Int32, CollegeApp.Models.StudentDTO) on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 09:47:46.222 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0
+2025-02-20 09:47:46.227 +04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-02-20 09:47:46.229 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.EditStudent (CollegeApp) in 161.0745ms
+2025-02-20 09:47:46.229 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.EditStudent (CollegeApp)'
+2025-02-20 09:47:46.230 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7194/api/students/5 - 404 null text/plain; charset=utf-8 196.4173ms
+2025-02-20 10:44:46.911 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-20 10:44:46.965 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-20 10:44:46.968 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-20 10:44:46.968 +04:00 [INF] Hosting environment: Development
+2025-02-20 10:44:46.968 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-20 10:44:48.881 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-20 10:44:49.469 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 607.9688ms
+2025-02-20 10:44:49.511 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-20 10:44:49.517 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-20 10:44:49.522 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 4.6496ms
+2025-02-20 10:44:49.563 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-20 10:44:49.577 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 65.3356ms
+2025-02-20 10:44:49.667 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.5713ms
+2025-02-20 10:44:49.780 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-20 10:44:50.205 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 425.2925ms
+2025-02-20 10:44:55.287 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-20 10:44:55.365 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 10:44:55.427 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 10:44:55.647 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 211.2274ms
+2025-02-20 10:44:55.649 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 10:44:55.658 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Implementation type 'CollegeApp.Data.Repo.CollegeRepository`1[CollegeApp.Data.Student]' can't be converted to service type 'CollegeApp.Data.Repo.ICollegeRepository`1[CollegeApp.Data.Student]'
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite..ctor(ResultCache cache, Type serviceType, ConstructorInfo constructorInfo, ServiceCallSite[] parameterCallSites)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-20 10:44:55.768 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 482.8471ms
+2025-02-20 10:49:27.989 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-20 10:49:28.045 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-20 10:49:28.050 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-20 10:49:28.050 +04:00 [INF] Hosting environment: Development
+2025-02-20 10:49:28.051 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-20 10:49:28.638 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-20 10:49:29.012 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 385.3668ms
+2025-02-20 10:49:29.094 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-20 10:49:29.106 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-20 10:49:29.140 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 33.8153ms
+2025-02-20 10:49:29.145 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 51.3249ms
+2025-02-20 10:49:29.151 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-20 10:49:29.260 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 109.2426ms
+2025-02-20 10:49:29.330 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-20 10:49:29.677 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 346.7323ms
+2025-02-20 10:49:34.202 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-20 10:49:34.285 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 10:49:34.364 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 10:49:34.627 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 255.5531ms
+2025-02-20 10:49:34.628 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 10:49:34.636 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Implementation type 'CollegeApp.Data.Repo.CollegeRepository`1[CollegeApp.Data.Student]' can't be converted to service type 'CollegeApp.Data.Repo.ICollegeRepository`1[CollegeApp.Data.Student]'
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite..ctor(ResultCache cache, Type serviceType, ConstructorInfo constructorInfo, ServiceCallSite[] parameterCallSites)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-20 10:49:34.729 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 526.8321ms
+2025-02-20 10:57:31.843 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-20 10:57:31.929 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-20 10:57:31.933 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-20 10:57:31.934 +04:00 [INF] Hosting environment: Development
+2025-02-20 10:57:31.934 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-20 10:57:32.651 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-20 10:57:33.030 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 389.3373ms
+2025-02-20 10:57:33.076 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-20 10:57:33.126 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-20 10:57:33.127 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-20 10:57:33.146 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 19.8538ms
+2025-02-20 10:57:33.152 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 76.8604ms
+2025-02-20 10:57:33.195 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.235ms
+2025-02-20 10:57:33.269 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-20 10:57:33.646 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 376.5837ms
+2025-02-20 10:57:38.094 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-20 10:57:38.158 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 10:57:38.225 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 10:57:38.392 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 159.8411ms
+2025-02-20 10:57:38.393 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 10:57:38.399 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Implementation type 'CollegeApp.Data.Repo.CollegeRepository`1[CollegeApp.Data.Student]' can't be converted to service type 'CollegeApp.Data.Repo.ICollegeRepository`1[CollegeApp.Data.Student]'
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite..ctor(ResultCache cache, Type serviceType, ConstructorInfo constructorInfo, ServiceCallSite[] parameterCallSites)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-20 10:57:38.481 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 387.4744ms
+2025-02-20 11:01:12.956 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-20 11:01:13.004 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-20 11:01:13.010 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-20 11:01:13.010 +04:00 [INF] Hosting environment: Development
+2025-02-20 11:01:13.010 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-20 11:01:14.046 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-20 11:01:14.377 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 336.7429ms
+2025-02-20 11:01:14.412 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-20 11:01:14.416 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-20 11:01:14.428 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 11.9308ms
+2025-02-20 11:01:14.438 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-20 11:01:14.438 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 26.8022ms
+2025-02-20 11:01:14.583 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 145.8557ms
+2025-02-20 11:01:14.641 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-20 11:01:14.971 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 329.7462ms
+2025-02-20 11:01:19.039 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-20 11:01:19.096 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 11:01:19.143 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 11:01:19.336 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 182.7125ms
+2025-02-20 11:01:19.340 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 11:01:19.348 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Implementation type 'CollegeApp.Data.Repo.CollegeRepository`1[CollegeApp.Data.Student]' can't be converted to service type 'CollegeApp.Data.Repo.ICollegeRepository`1[CollegeApp.Data.Student]'
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite..ctor(ResultCache cache, Type serviceType, ConstructorInfo constructorInfo, ServiceCallSite[] parameterCallSites)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-20 11:01:19.414 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 375.3855ms
+2025-02-20 11:51:09.012 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-20 11:51:09.083 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-20 11:51:09.093 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-20 11:51:09.098 +04:00 [INF] Hosting environment: Development
+2025-02-20 11:51:09.098 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-20 11:51:09.804 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-20 11:51:10.243 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 471.716ms
+2025-02-20 11:51:10.283 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-20 11:51:10.288 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-20 11:51:10.288 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-20 11:51:10.291 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.3583ms
+2025-02-20 11:51:10.311 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 27.7736ms
+2025-02-20 11:51:10.476 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 188.3582ms
+2025-02-20 11:51:10.574 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-20 11:51:11.002 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 428.6548ms
+2025-02-20 11:51:16.858 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-20 11:51:16.941 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 11:51:16.995 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 11:51:17.249 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 244.3962ms
+2025-02-20 11:51:17.252 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 11:51:17.261 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Implementation type 'CollegeApp.Data.Repo.CollegeRepository`1[CollegeApp.Data.Student]' can't be converted to service type 'CollegeApp.Data.Repo.ICollegeRepository`1[CollegeApp.Data.Student]'
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite..ctor(ResultCache cache, Type serviceType, ConstructorInfo constructorInfo, ServiceCallSite[] parameterCallSites)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-20 11:51:17.369 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 510.6908ms
+2025-02-20 12:09:08.315 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-20 12:09:08.377 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-20 12:09:08.380 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-20 12:09:08.381 +04:00 [INF] Hosting environment: Development
+2025-02-20 12:09:08.381 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-20 12:09:09.271 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-20 12:09:09.619 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 364.0913ms
+2025-02-20 12:09:09.666 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-20 12:09:09.667 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-20 12:09:09.670 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 5.31ms
+2025-02-20 12:09:09.673 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-02-20 12:09:09.712 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 47.5735ms
+2025-02-20 12:09:09.802 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 129.3437ms
+2025-02-20 12:09:09.883 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-20 12:09:10.220 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 337.2414ms
+2025-02-20 12:09:13.910 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-20 12:09:13.995 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 12:09:14.045 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-20 12:09:14.276 +04:00 [INF] Executed action CollegeApp.Controllers.StudentController.GetStudents (CollegeApp) in 223.5937ms
+2025-02-20 12:09:14.277 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-20 12:09:14.283 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Implementation type 'CollegeApp.Data.Repo.CollegeRepository`1[CollegeApp.Data.Student]' can't be converted to service type 'CollegeApp.Data.Repo.ICollegeRepository`1[CollegeApp.Data.Student]'
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ConstructorCallSite..ctor(ResultCache cache, Type serviceType, ConstructorInfo constructorInfo, ServiceCallSite[] parameterCallSites)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-20 12:09:14.369 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/students - 500 null text/plain; charset=utf-8 459.7058ms
+2025-02-20 20:50:54.305 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 20:53:15.009 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 20:53:40.680 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:06:24.387 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:07:29.928 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:09:09.190 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:09:29.001 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:30:56.517 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:32:44.352 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:34:22.736 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:36:23.404 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:40:03.908 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:40:30.183 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-20 21:40:43.689 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68

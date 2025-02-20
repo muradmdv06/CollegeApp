@@ -1,16 +1,21 @@
 using CollegeApp.Configurations;
 using CollegeApp.Data;
+using CollegeApp.Data.Repository;
+using CollegeApp.Data.Repo;
+using CollegeApp.MyLogging;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Serilog;
+using System;
 using System.Text.Json.Serialization;
 using AutoMapper;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using CollegeApp.Data.Repository;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Serilog for logging
+
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
@@ -18,51 +23,73 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-// Configure Database Context
-builder.Services.AddDbContext<CollegeDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"))
-);
-
-// Register AutoMapper
-builder.Services.AddAutoMapper(typeof(AutoMapperConfig).Assembly);
-
-// Register repositories
-builder.Services.AddTransient<IStudentRepository, StudentRepository>();
-
-// Configure Controllers with JSON serialization options
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
+try
+{
+    
+    var connectionString = builder.Configuration.GetConnectionString("CollegeAppDBConnection");
+    if (string.IsNullOrEmpty(connectionString))
     {
-        options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+        throw new InvalidOperationException("Database connection string is missing!");
+    }
+
+    
+    builder.Services.AddDbContext<CollegeDBContext>(options =>
+        options.UseSqlServer(connectionString)
+    );
+
+    
+    builder.Services.AddAutoMapper(typeof(AutoMapperConfig).Assembly);
+
+    
+    builder.Services.AddTransient<IMyLogger, LogToServerMemory>();
+    builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+    builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));
+
+    
+    builder.Services.AddControllers()
+        .AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+        });
+
+   
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+
+    
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll", policy =>
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader());
     });
 
-// Enable Swagger for API documentation
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+    var app = builder.Build();
 
-// Configure CORS policy
-builder.Services.AddCors(options =>
+    
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
+    app.UseHttpsRedirection();
+    app.UseRouting();
+    app.UseCors("AllowAll");
+    app.UseAuthorization();
+
+    app.MapControllers();
+
+    
+    app.Run();
+}
+catch (Exception ex)
 {
-    options.AddPolicy("AllowAll", policy =>
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader());
-});
-
-var app = builder.Build();
-
-// Enable Swagger UI only in Development
-if (app.Environment.IsDevelopment())
+    Log.Fatal(ex, "Application startup failed!");
+}
+finally
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    Log.CloseAndFlush();
 }
 
-app.UseHttpsRedirection();
-
-app.UseRouting();  // Ensures correct request routing
-app.UseCors("AllowAll");
-app.UseAuthorization();
-
-app.MapControllers();
-app.Run();

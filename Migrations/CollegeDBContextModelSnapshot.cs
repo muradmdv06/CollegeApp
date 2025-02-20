@@ -21,6 +21,42 @@ namespace CollegeApp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CollegeApp.Data.Department", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DepartmentName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Departments", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DepartmentName = "ECE",
+                            Description = "ECE Department"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DepartmentName = "CSE",
+                            Description = "CSE Department"
+                        });
+                });
+
             modelBuilder.Entity("CollegeApp.Data.Student", b =>
                 {
                     b.Property<int>("Id")
@@ -32,6 +68,9 @@ namespace CollegeApp.Migrations
                     b.Property<string>("Address")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -45,23 +84,44 @@ namespace CollegeApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Students");
+                    b.HasIndex("DepartmentId");
+
+                    b.ToTable("Students", (string)null);
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            Address = "Azerbaijan",
+                            Address = "Baku, Azerbaijan",
+                            DepartmentId = 0,
                             Email = "Murad@gmail.com",
                             StudentName = "Murad"
                         },
                         new
                         {
                             Id = 2,
-                            Address = "Azerbaijan",
+                            Address = "Beyleqan,Azerbaijan",
+                            DepartmentId = 0,
                             Email = "Baylar@gmail.com",
                             StudentName = "Baylar"
                         });
+                });
+
+            modelBuilder.Entity("CollegeApp.Data.Student", b =>
+                {
+                    b.HasOne("CollegeApp.Data.Department", "Department")
+                        .WithMany("Students")
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_Students_Department");
+
+                    b.Navigation("Department");
+                });
+
+            modelBuilder.Entity("CollegeApp.Data.Department", b =>
+                {
+                    b.Navigation("Students");
                 });
 #pragma warning restore 612, 618
         }
