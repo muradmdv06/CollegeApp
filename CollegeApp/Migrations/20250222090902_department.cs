@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CollegeApp.Migrations
 {
     /// <inheritdoc />
-    public partial class AddDepartmentsTable : Migration
+    public partial class department : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -47,14 +47,14 @@ namespace CollegeApp.Migrations
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "Address", "DepartmentId" },
-                values: new object[] { "Baku, Azerbaijan", 0 });
+                values: new object[] { "Baku, Azerbaijan", 1 });
 
             migrationBuilder.UpdateData(
                 table: "Students",
                 keyColumn: "Id",
                 keyValue: 2,
                 columns: new[] { "Address", "DepartmentId" },
-                values: new object[] { "Beyleqan,Azerbaijan", 0 });
+                values: new object[] { "Beyleqan, Azerbaijan", 2 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Students_DepartmentId",

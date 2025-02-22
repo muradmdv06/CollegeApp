@@ -25,38 +25,38 @@ builder.Host.UseSerilog();
 
 try
 {
-    
+
     var connectionString = builder.Configuration.GetConnectionString("CollegeAppDBConnection");
     if (string.IsNullOrEmpty(connectionString))
     {
         throw new InvalidOperationException("Database connection string is missing!");
     }
 
-    
+
     builder.Services.AddDbContext<CollegeDBContext>(options =>
         options.UseSqlServer(connectionString)
     );
 
-    
+
     builder.Services.AddAutoMapper(typeof(AutoMapperConfig).Assembly);
 
-    
+
     builder.Services.AddTransient<IMyLogger, LogToServerMemory>();
     builder.Services.AddScoped<IStudentRepository, StudentRepository>();
     builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));
 
-    
+
     builder.Services.AddControllers()
         .AddJsonOptions(options =>
         {
             options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
         });
 
-   
+
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
-    
+
     builder.Services.AddCors(options =>
     {
         options.AddPolicy("AllowAll", policy =>
@@ -67,7 +67,7 @@ try
 
     var app = builder.Build();
 
-    
+
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
@@ -81,7 +81,7 @@ try
 
     app.MapControllers();
 
-    
+
     app.Run();
 }
 catch (Exception ex)
