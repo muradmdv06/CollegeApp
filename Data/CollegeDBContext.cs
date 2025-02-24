@@ -15,7 +15,7 @@ namespace CollegeApp.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Table 1
-            modelBuilder.ApplyConfiguration(new StudentConfig());
+            
             modelBuilder.ApplyConfiguration(new DepartmentConfig());
 
 

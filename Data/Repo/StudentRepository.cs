@@ -2,15 +2,18 @@
 
 using CollegeApp.Data.Repo;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CollegeApp.Data.Repository
 {
     public class StudentRepository : CollegeRepository<Student>, IStudentRepository
     {
         private readonly CollegeDBContext _dbContext;
-        public StudentRepository(CollegeDBContext dbContext) : base(dbContext) {
+        public StudentRepository(CollegeDBContext dbContext) : base(dbContext)
+        {
             _dbContext = dbContext;
-            
+
         }
 
         public Task<List<Student>> GetStudentsByFeeStatusAsync(int feeStatus)

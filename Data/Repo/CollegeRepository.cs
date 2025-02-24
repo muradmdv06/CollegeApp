@@ -1,16 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace CollegeApp.Data.Repo
 {
-    public class CollegeRepository<T> : ICollegeRepository where T : class
+    public class CollegeRepository<T> : ICollegeRepository<T> where T : class
     {
         private readonly CollegeDBContext _dbContext;
         private DbSet<T> _dbSet;
-        public CollegeRepository(CollegeDBContext dbContext) {
+        public CollegeRepository(CollegeDBContext dbContext)
+        {
             _dbContext = dbContext;
-            _dbSet= _dbContext.Set<T>();    
-        
+            _dbSet = _dbContext.Set<T>();
+
         }
 
         public async Task<T> CreateAsync(T dbRecord)
@@ -35,7 +39,7 @@ namespace CollegeApp.Data.Repo
             return await _dbSet.ToListAsync();
         }
 
-        public async Task<T> GetAsync(Expression<Func<T,bool>> filter, bool useNoTracking = false)
+        public async Task<T> GetAsync(Expression<Func<T, bool>> filter, bool useNoTracking = false)
         {
             if (useNoTracking)
                 return await _dbSet.AsNoTracking().Where(filter).FirstOrDefaultAsync();
@@ -46,7 +50,7 @@ namespace CollegeApp.Data.Repo
 
         //public async Task<T> GetByNameAsync(Expression<Func<T, bool>> filter)
         //{
-          //  return await _dbSet.Where(filter).FirstOrDefaultAsync();
+        //  return await _dbSet.Where(filter).FirstOrDefaultAsync();
 
         //}
 

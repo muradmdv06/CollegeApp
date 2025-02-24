@@ -1,4 +1,7 @@
-﻿using System.Linq.Expressions;
+﻿using System.Collections.Generic;
+using System;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace CollegeApp.Data.Repo
 {
@@ -11,6 +14,6 @@ namespace CollegeApp.Data.Repo
         Task<T> CreateAsync(T dbRecord);
         Task<T> UpdateAsync(T dbRecord);
         Task<bool> DeleteAsync(T dbRecord);
-       
+
     }
 }
