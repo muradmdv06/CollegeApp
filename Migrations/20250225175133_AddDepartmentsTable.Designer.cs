@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CollegeApp.Migrations
 {
     [DbContext(typeof(CollegeDBContext))]
-    [Migration("20250221193333_AddDepartmentsTable")]
+    [Migration("20250225175133_AddDepartmentsTable")]
     partial class AddDepartmentsTable
     {
         /// <inheritdoc />
@@ -69,25 +69,45 @@ namespace CollegeApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<int>("DepartmentId")
                         .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("StudentName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "Baku, Azerbaijan",
+                            DepartmentId = 1,
+                            Email = "Murad@gmail.com",
+                            StudentName = "Murad"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Address = "Beyleqan, Azerbaijan",
+                            DepartmentId = 2,
+                            Email = "Baylar@gmail.com",
+                            StudentName = "Baylar"
+                        });
                 });
 
             modelBuilder.Entity("CollegeApp.Data.Student", b =>
@@ -96,7 +116,8 @@ namespace CollegeApp.Migrations
                         .WithMany("Students")
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("FK_Students_Department");
 
                     b.Navigation("Department");
                 });

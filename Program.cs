@@ -11,52 +11,54 @@ using Serilog;
 using System;
 using System.Text.Json.Serialization;
 using AutoMapper;
-
-
-var builder = WebApplication.CreateBuilder(args);
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
+var builder = WebApplication.CreateBuilder(args);
+
+// Use Serilog
 builder.Host.UseSerilog();
 
 try
 {
-    
+    // Get Connection String
     var connectionString = builder.Configuration.GetConnectionString("CollegeAppDBConnection");
     if (string.IsNullOrEmpty(connectionString))
     {
+        Log.Fatal("Database connection string is missing!");
         throw new InvalidOperationException("Database connection string is missing!");
     }
 
-    
-    builder.Services.AddDbContext<CollegeDBContext>(options =>
-        options.UseSqlServer(connectionString)
-    );
+    // Logging
+    builder.Services.AddTransient<IMyLogger, LogToServerMemory>();
 
-    
+    // Database
+    builder.Services.AddDbContext<CollegeDBContext>(options =>
+        options.UseSqlServer(connectionString));
+
+    // Automapper
     builder.Services.AddAutoMapper(typeof(AutoMapperConfig).Assembly);
 
-    
-    builder.Services.AddTransient<IMyLogger, LogToServerMemory>();
+    // Repositories
     builder.Services.AddScoped<IStudentRepository, StudentRepository>();
     builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));
 
-    
+    // Controllers & JSON Configurations
     builder.Services.AddControllers()
         .AddJsonOptions(options =>
         {
             options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
         });
 
-   
+    // Swagger
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
-    
+    // CORS Configuration
     builder.Services.AddCors(options =>
     {
         options.AddPolicy("AllowAll", policy =>
@@ -64,10 +66,16 @@ try
                   .AllowAnyMethod()
                   .AllowAnyHeader());
     });
+    builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+    });
 
     var app = builder.Build();
 
-    
+    // Middleware
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
@@ -76,12 +84,10 @@ try
 
     app.UseHttpsRedirection();
     app.UseRouting();
-    app.UseCors("AllowAll");
+    app.UseCors("AllowAll");  // Ensure the correct CORS policy name
     app.UseAuthorization();
-
     app.MapControllers();
 
-    
     app.Run();
 }
 catch (Exception ex)
@@ -92,4 +98,5 @@ finally
 {
     Log.CloseAndFlush();
 }
+
 

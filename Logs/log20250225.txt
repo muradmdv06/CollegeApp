@@ -1,0 +1,76 @@
+2025-02-25 01:33:22.144 +04:00 [INF] Now listening on: https://localhost:7194
+2025-02-25 01:33:22.217 +04:00 [INF] Now listening on: http://localhost:5194
+2025-02-25 01:33:22.225 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-25 01:33:22.227 +04:00 [INF] Hosting environment: Development
+2025-02-25 01:33:22.227 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-02-25 01:33:23.153 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-02-25 01:33:23.418 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 277.8214ms
+2025-02-25 01:33:23.481 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-25 01:33:23.534 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-02-25 01:33:23.537 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.5338ms
+2025-02-25 01:33:23.555 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 73.8856ms
+2025-02-25 01:33:23.831 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-02-25 01:33:24.137 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 306.1377ms
+2025-02-25 01:33:27.359 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/students - null null
+2025-02-25 01:33:27.403 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.StudentController.GetStudents (CollegeApp)'
+2025-02-25 01:33:27.435 +04:00 [INF] Route matched with {action = "GetStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CollegeApp.Models.StudentDTO]]] GetStudents() on controller CollegeApp.Controllers.StudentController (CollegeApp).
+2025-02-25 01:34:28.344 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-25 21:51:31.601 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-25 21:51:55.801 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-25 21:53:20.955 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-25 22:19:07.608 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
+2025-02-25 22:19:39.274 +04:00 [FTL] Application startup failed!
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Program.cs:line 68
