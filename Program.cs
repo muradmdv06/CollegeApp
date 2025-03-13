@@ -12,6 +12,7 @@ using System;
 using System.Text.Json.Serialization;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using CollegeApp.Services;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -45,6 +46,7 @@ try
 
     // Repositories
     builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+    builder.Services.AddScoped<IUserService,UserService>();
     builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));
 
     // Controllers & JSON Configurations

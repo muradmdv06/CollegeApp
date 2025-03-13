@@ -1,0 +1,881 @@
+2025-03-07 09:35:37.436 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 09:35:38.250 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 09:35:38.251 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 09:35:38.255 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 09:35:38.256 +04:00 [INF] Hosting environment: Development
+2025-03-07 09:35:38.256 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 09:35:39.493 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 09:35:40.239 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 761.7614ms
+2025-03-07 09:35:40.252 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 09:35:40.253 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/swagger-ui.css - null null
+2025-03-07 09:35:40.253 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.css - null null
+2025-03-07 09:35:40.253 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 09:35:40.254 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-07 09:35:40.257 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 4.4644ms
+2025-03-07 09:35:40.257 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/swagger-ui-bundle.js - null null
+2025-03-07 09:35:40.265 +04:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2025-03-07 09:35:40.265 +04:00 [INF] The file /swagger-ui.css was not modified
+2025-03-07 09:35:40.265 +04:00 [INF] The file /index.css was not modified
+2025-03-07 09:35:40.266 +04:00 [INF] The file /swagger-ui-bundle.js was not modified
+2025-03-07 09:35:40.266 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/swagger-ui-bundle.js - 304 null text/javascript 8.9823ms
+2025-03-07 09:35:40.266 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 12.3946ms
+2025-03-07 09:35:40.267 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/swagger-ui.css - 304 null text/css 14.0923ms
+2025-03-07 09:35:40.266 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.css - 304 null text/css 13.7333ms
+2025-03-07 09:35:40.267 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 09:35:40.283 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 31.4818ms
+2025-03-07 09:35:40.437 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 170.3644ms
+2025-03-07 09:35:40.631 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 09:35:41.216 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 584.6301ms
+2025-03-07 09:36:04.314 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 09:36:04.366 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 09:36:04.434 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 09:36:08.708 +04:00 [INF] Executed DbCommand (137ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivelegeName]
+FROM [RolePriveleges] AS [r]
+2025-03-07 09:36:08.984 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 09:36:09.109 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 4665.7383ms
+2025-03-07 09:36:09.111 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 09:36:09.149 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 200 null application/json; charset=utf-8 4835.5087ms
+2025-03-07 09:36:47.224 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7194/api/RolePrivilege/Update - application/json 152
+2025-03-07 09:36:47.238 +04:00 [INF] CORS policy execution successful.
+2025-03-07 09:36:47.241 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.UpdateRole (CollegeApp)'
+2025-03-07 09:36:47.262 +04:00 [INF] Route matched with {action = "UpdateRole", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] UpdateRole(CollegeApp.Models.RolePrivelegeDTO) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 09:36:47.849 +04:00 [INF] Executed DbCommand (91ms) [Parameters=[@__dto_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivelegeName]
+FROM [RolePriveleges] AS [r]
+WHERE [r].[Id] = @__dto_Id_0
+2025-03-07 09:36:48.152 +04:00 [INF] Executed DbCommand (52ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Int32), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [RolePriveleges] SET [CreatedDate] = @p0, [Description] = @p1, [IsActive] = @p2, [IsDeleted] = @p3, [ModifiedDate] = @p4, [RoleId] = @p5, [RolePrivelegeName] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-03-07 09:37:21.689 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 09:37:22.100 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 09:37:22.100 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 09:37:22.105 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 09:37:22.106 +04:00 [INF] Hosting environment: Development
+2025-03-07 09:37:22.106 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 09:37:22.937 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 09:37:23.356 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 434.1652ms
+2025-03-07 09:37:23.410 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 09:37:23.411 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 09:37:23.411 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 09:37:23.416 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 5.4731ms
+2025-03-07 09:37:23.447 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 37.1135ms
+2025-03-07 09:37:23.523 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.5879ms
+2025-03-07 09:37:23.753 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 09:37:24.235 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 482.7161ms
+2025-03-07 09:37:58.843 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7194/api/RolePrivilege/Update - application/json 151
+2025-03-07 09:37:58.930 +04:00 [INF] CORS policy execution successful.
+2025-03-07 09:37:58.940 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.UpdateRole (CollegeApp)'
+2025-03-07 09:37:58.990 +04:00 [INF] Route matched with {action = "UpdateRole", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] UpdateRole(CollegeApp.Models.RolePrivelegeDTO) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 09:38:03.255 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'CollegeApp.Data.CollegeDBContext'.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-07 09:46:13.657 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 09:46:14.337 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 09:46:14.338 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 09:46:14.344 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 09:46:14.345 +04:00 [INF] Hosting environment: Development
+2025-03-07 09:46:14.345 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 09:46:14.898 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 09:46:15.271 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 346.6407ms
+2025-03-07 09:46:15.292 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 09:46:15.293 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 09:46:15.293 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 09:46:15.296 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 2.636ms
+2025-03-07 09:46:15.346 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 54.5908ms
+2025-03-07 09:46:15.455 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 162.4616ms
+2025-03-07 09:46:15.684 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 09:46:16.028 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 344.2026ms
+2025-03-07 09:46:21.530 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 09:46:21.635 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 09:46:21.702 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 09:46:26.106 +04:00 [ERR] Failed executing DbCommand (143ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+2025-03-07 09:46:26.211 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CollegeApp.Data.CollegeDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:1149a7e2-acab-43a3-8319-718c621050d6
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:1149a7e2-acab-43a3-8319-718c621050d6
+Error Number:208,State:1,Class:16
+2025-03-07 09:46:26.394 +04:00 [ERR] Error retrieving all role privileges
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CollegeApp.Data.Repo.CollegeRepository`1.GetAllAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repo\CollegeRepository.cs:line 39
+   at CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\`RolePrivilegeController.cs:line 68
+ClientConnectionId:1149a7e2-acab-43a3-8319-718c621050d6
+Error Number:208,State:1,Class:16
+2025-03-07 09:46:26.461 +04:00 [INF] Executing ObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 09:46:26.530 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 4820.3168ms
+2025-03-07 09:46:26.531 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 09:46:26.547 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 500 null application/json; charset=utf-8 5016.8676ms
+2025-03-07 09:49:37.882 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 09:49:38.475 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 09:49:38.475 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 09:49:38.478 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 09:49:38.479 +04:00 [INF] Hosting environment: Development
+2025-03-07 09:49:38.479 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 09:49:39.354 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 09:49:39.720 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 365.3533ms
+2025-03-07 09:49:39.746 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 09:49:39.747 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 09:49:39.749 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 09:49:39.750 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 2.3515ms
+2025-03-07 09:49:39.765 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 18.2659ms
+2025-03-07 09:49:39.980 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 230.497ms
+2025-03-07 09:49:40.085 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 09:49:40.409 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 324.4643ms
+2025-03-07 09:49:45.082 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 09:49:45.151 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 09:49:45.215 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 09:49:48.783 +04:00 [ERR] Failed executing DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+2025-03-07 09:49:48.870 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CollegeApp.Data.CollegeDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6fee9b8c-c126-4dfe-80eb-5f38a005f1a7
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6fee9b8c-c126-4dfe-80eb-5f38a005f1a7
+Error Number:208,State:1,Class:16
+2025-03-07 09:49:49.086 +04:00 [ERR] Error retrieving all role privileges
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CollegeApp.Data.Repo.CollegeRepository`1.GetAllAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repo\CollegeRepository.cs:line 39
+   at CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\`RolePrivilegeController.cs:line 68
+ClientConnectionId:6fee9b8c-c126-4dfe-80eb-5f38a005f1a7
+Error Number:208,State:1,Class:16
+2025-03-07 09:49:49.139 +04:00 [INF] Executing ObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 09:49:49.233 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 4006.3749ms
+2025-03-07 09:49:49.234 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 09:49:49.253 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 500 null application/json; charset=utf-8 4170.5789ms
+2025-03-07 09:54:46.868 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 09:54:47.236 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 09:54:47.237 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 09:54:47.240 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 09:54:47.241 +04:00 [INF] Hosting environment: Development
+2025-03-07 09:54:47.241 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 09:54:47.715 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 09:54:48.086 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 381.3207ms
+2025-03-07 09:54:48.148 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 09:54:48.148 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 09:54:48.148 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 09:54:48.151 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 2.7974ms
+2025-03-07 09:54:48.177 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 27.9101ms
+2025-03-07 09:54:48.254 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.6573ms
+2025-03-07 09:54:48.505 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 09:54:48.960 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 455.6438ms
+2025-03-07 09:54:53.861 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 09:54:53.930 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 09:54:53.992 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 09:54:57.360 +04:00 [ERR] Failed executing DbCommand (124ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+2025-03-07 09:54:57.431 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CollegeApp.Data.CollegeDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:dc507604-8373-48a4-9f5a-2eb2c7c0d956
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:dc507604-8373-48a4-9f5a-2eb2c7c0d956
+Error Number:208,State:1,Class:16
+2025-03-07 09:54:57.597 +04:00 [ERR] Error retrieving all role privileges
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "RolePrivileges".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CollegeApp.Data.Repo.CollegeRepository`1.GetAllAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repo\CollegeRepository.cs:line 39
+   at CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\`RolePrivilegeController.cs:line 72
+ClientConnectionId:dc507604-8373-48a4-9f5a-2eb2c7c0d956
+Error Number:208,State:1,Class:16
+2025-03-07 09:54:57.642 +04:00 [INF] Executing ObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 09:54:57.713 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 3715.7051ms
+2025-03-07 09:54:57.714 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 09:54:57.738 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 500 null application/json; charset=utf-8 3878.4605ms
+2025-03-07 10:03:39.352 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 10:03:39.757 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 10:03:39.758 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 10:03:39.762 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 10:03:39.763 +04:00 [INF] Hosting environment: Development
+2025-03-07 10:03:39.763 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 10:03:40.320 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 10:03:40.790 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 478.8671ms
+2025-03-07 10:03:40.836 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 10:03:40.836 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 10:03:40.839 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 10:03:40.840 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.487ms
+2025-03-07 10:03:40.875 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 38.7334ms
+2025-03-07 10:03:40.961 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.5631ms
+2025-03-07 10:03:41.154 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 10:03:41.553 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 399.396ms
+2025-03-07 10:07:30.145 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 10:07:30.507 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 10:07:30.508 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 10:07:30.510 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 10:07:30.511 +04:00 [INF] Hosting environment: Development
+2025-03-07 10:07:30.511 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 10:07:31.541 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 10:07:32.007 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 471.1782ms
+2025-03-07 10:07:32.058 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 10:07:32.063 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 10:07:32.066 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 10:07:32.067 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 4.7602ms
+2025-03-07 10:07:32.080 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 23.0809ms
+2025-03-07 10:07:32.161 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.0434ms
+2025-03-07 10:07:32.379 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 10:07:32.772 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 392.9675ms
+2025-03-07 10:07:36.620 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 10:07:36.686 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:07:36.750 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:07:40.998 +04:00 [ERR] Failed executing DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+2025-03-07 10:07:41.108 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CollegeApp.Data.CollegeDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "RolePrivilegeName".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:52b3360d-2a78-42d0-a912-6b212d302538
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "RolePrivilegeName".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:52b3360d-2a78-42d0-a912-6b212d302538
+Error Number:207,State:1,Class:16
+2025-03-07 10:07:41.283 +04:00 [ERR] Error retrieving all role privileges
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "RolePrivilegeName".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CollegeApp.Data.Repo.CollegeRepository`1.GetAllAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repo\CollegeRepository.cs:line 39
+   at CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\`RolePrivilegeController.cs:line 78
+ClientConnectionId:52b3360d-2a78-42d0-a912-6b212d302538
+Error Number:207,State:1,Class:16
+2025-03-07 10:07:41.357 +04:00 [INF] Executing ObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:07:41.437 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 4680.6347ms
+2025-03-07 10:07:41.438 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:07:41.453 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 500 null application/json; charset=utf-8 4834.3317ms
+2025-03-07 10:08:00.929 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 10:08:00.963 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:08:00.964 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:08:01.154 +04:00 [ERR] Failed executing DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+2025-03-07 10:08:01.159 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CollegeApp.Data.CollegeDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "RolePrivilegeName".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:52b3360d-2a78-42d0-a912-6b212d302538
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "RolePrivilegeName".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:52b3360d-2a78-42d0-a912-6b212d302538
+Error Number:207,State:1,Class:16
+2025-03-07 10:08:01.280 +04:00 [ERR] Error retrieving all role privileges
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "RolePrivilegeName".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CollegeApp.Data.Repo.CollegeRepository`1.GetAllAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repo\CollegeRepository.cs:line 39
+   at CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync() in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\`RolePrivilegeController.cs:line 78
+ClientConnectionId:52b3360d-2a78-42d0-a912-6b212d302538
+Error Number:207,State:1,Class:16
+2025-03-07 10:08:01.292 +04:00 [INF] Executing ObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:08:01.293 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 328.6091ms
+2025-03-07 10:08:01.293 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:08:01.293 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 500 null application/json; charset=utf-8 364.4345ms
+2025-03-07 10:08:01.362 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/favicon.ico - null null
+2025-03-07 10:08:01.366 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/favicon.ico - 404 0 null 4.2119ms
+2025-03-07 10:08:01.368 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7194/favicon.ico, Response status code: 404
+2025-03-07 10:09:24.755 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 10:09:25.121 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 10:09:25.122 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 10:09:25.127 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 10:09:25.128 +04:00 [INF] Hosting environment: Development
+2025-03-07 10:09:25.128 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 10:09:25.638 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 10:09:26.022 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 389.276ms
+2025-03-07 10:09:26.059 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 10:09:26.059 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 10:09:26.059 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 10:09:26.062 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 2.5975ms
+2025-03-07 10:09:26.082 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 23.1509ms
+2025-03-07 10:09:26.127 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.0463ms
+2025-03-07 10:09:26.327 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 10:09:26.687 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 359.9836ms
+2025-03-07 10:09:31.860 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 10:09:31.924 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:09:31.975 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:09:35.154 +04:00 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+2025-03-07 10:09:35.348 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:09:35.444 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 3461.6711ms
+2025-03-07 10:09:35.447 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:09:35.467 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 200 null application/json; charset=utf-8 3607.8166ms
+2025-03-07 10:10:05.234 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7194/api/RolePrivilege/update - application/json 157
+2025-03-07 10:10:05.254 +04:00 [INF] CORS policy execution successful.
+2025-03-07 10:10:05.257 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.UpdateRole (CollegeApp)'
+2025-03-07 10:10:05.286 +04:00 [INF] Route matched with {action = "UpdateRole", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] UpdateRole(CollegeApp.Models.RolePrivilegeDTO) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:10:05.826 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[@__dto_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+WHERE [r].[Id] = @__dto_Id_0
+2025-03-07 10:10:06.040 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Int32), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [RolePrivileges] SET [CreatedDate] = @p0, [Description] = @p1, [IsActive] = @p2, [IsDeleted] = @p3, [ModifiedDate] = @p4, [RoleId] = @p5, [RolePrivilegeName] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-03-07 10:10:06.064 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:10:06.085 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.UpdateRole (CollegeApp) in 799.1753ms
+2025-03-07 10:10:06.086 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.UpdateRole (CollegeApp)'
+2025-03-07 10:10:06.086 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7194/api/RolePrivilege/update - 200 null application/json; charset=utf-8 852.241ms
+2025-03-07 10:11:28.679 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 10:11:28.681 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:11:28.682 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:11:28.724 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+2025-03-07 10:11:28.727 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:11:28.727 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 45.7543ms
+2025-03-07 10:11:28.728 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:11:28.728 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 200 null application/json; charset=utf-8 50.66ms
+2025-03-07 10:18:24.186 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 10:18:24.741 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 10:18:24.742 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 10:18:24.747 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 10:18:24.748 +04:00 [INF] Hosting environment: Development
+2025-03-07 10:18:24.748 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 10:18:25.366 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 10:18:25.721 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 365.8408ms
+2025-03-07 10:18:25.763 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 10:18:25.763 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 10:18:25.765 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 10:18:25.766 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.1422ms
+2025-03-07 10:18:25.785 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 22.4992ms
+2025-03-07 10:18:25.836 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.0005ms
+2025-03-07 10:18:26.076 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 10:18:26.540 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 464.3384ms
+2025-03-07 10:19:24.347 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 10:19:24.710 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 10:19:24.711 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 10:19:24.715 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 10:19:24.716 +04:00 [INF] Hosting environment: Development
+2025-03-07 10:19:24.716 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 10:19:25.606 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 10:19:25.943 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 345.3087ms
+2025-03-07 10:19:25.993 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 10:19:25.993 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 10:19:25.993 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 10:19:25.996 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.1134ms
+2025-03-07 10:19:26.015 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 22.2049ms
+2025-03-07 10:19:26.076 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.0962ms
+2025-03-07 10:19:26.323 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 10:19:26.678 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 355.5832ms
+2025-03-07 10:19:59.645 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7194/api/RolePrivilege/create - application/json 128
+2025-03-07 10:19:59.726 +04:00 [INF] CORS policy execution successful.
+2025-03-07 10:19:59.737 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp)'
+2025-03-07 10:19:59.833 +04:00 [INF] Route matched with {action = "CreateRolePrivilege", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] CreateRolePrivilegeAsync(CollegeApp.Models.RolePrivilegeDTO) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:20:04.134 +04:00 [INF] Executed DbCommand (182ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Int32), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RolePrivileges] ([CreatedDate], [Description], [IsActive], [IsDeleted], [ModifiedDate], [RoleId], [RolePrivilegeName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-03-07 10:20:04.368 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'CollegeApp.Data.CollegeDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_RolePrivileges_Roles". Конфликт произошел в базе данных "CollegeAppDB", таблица "dbo.Roles", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:c38f649f-929a-48db-8e9e-f9f28ce16d56
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_RolePrivileges_Roles". Конфликт произошел в базе данных "CollegeAppDB", таблица "dbo.Roles", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:c38f649f-929a-48db-8e9e-f9f28ce16d56
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-07 10:20:04.674 +04:00 [ERR] Error creating role privilege
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_RolePrivileges_Roles". Конфликт произошел в базе данных "CollegeAppDB", таблица "dbo.Roles", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:c38f649f-929a-48db-8e9e-f9f28ce16d56
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CollegeApp.Data.Repo.CollegeRepository`1.CreateAsync(T dbRecord) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repo\CollegeRepository.cs:line 23
+   at CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync(RolePrivilegeDTO dto) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\`RolePrivilegeController.cs:line 51
+2025-03-07 10:20:04.735 +04:00 [INF] Executing ObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:20:04.794 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp) in 4951.5897ms
+2025-03-07 10:20:04.795 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp)'
+2025-03-07 10:20:04.826 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7194/api/RolePrivilege/create - 500 null application/json; charset=utf-8 5182.4027ms
+2025-03-07 10:20:23.904 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7194/api/RolePrivilege/delete/3 - null null
+2025-03-07 10:20:23.915 +04:00 [INF] CORS policy execution successful.
+2025-03-07 10:20:23.916 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.DeleteRoleAsync (CollegeApp)'
+2025-03-07 10:20:23.938 +04:00 [INF] Route matched with {action = "DeleteRole", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] DeleteRoleAsync(Int32) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:20:24.959 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-03-07 10:20:24.970 +04:00 [WRN] RolePrivilege not found with ID: 3
+2025-03-07 10:21:04.937 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 10:21:05.325 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 10:21:05.326 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 10:21:05.331 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 10:21:05.331 +04:00 [INF] Hosting environment: Development
+2025-03-07 10:21:05.331 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 10:21:06.155 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 10:21:06.452 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 312.4301ms
+2025-03-07 10:21:06.484 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 10:21:06.484 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 10:21:06.485 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 10:21:06.488 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.2478ms
+2025-03-07 10:21:06.502 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 18.0899ms
+2025-03-07 10:21:06.569 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.1849ms
+2025-03-07 10:21:06.811 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 10:21:06.870 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/favicon-32x32.png - null null
+2025-03-07 10:21:06.881 +04:00 [INF] The file /favicon-32x32.png was not modified
+2025-03-07 10:21:06.882 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/favicon-32x32.png - 304 null image/png 11.7912ms
+2025-03-07 10:21:07.153 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 342.2204ms
+2025-03-07 10:21:17.254 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7194/api/RolePrivilege/delete/1 - null null
+2025-03-07 10:21:17.317 +04:00 [INF] CORS policy execution successful.
+2025-03-07 10:21:17.327 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.DeleteRoleAsync (CollegeApp)'
+2025-03-07 10:21:17.391 +04:00 [INF] Route matched with {action = "DeleteRole", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] DeleteRoleAsync(Int32) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:21:21.202 +04:00 [INF] Executed DbCommand (123ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-03-07 10:21:21.742 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [RolePrivileges]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-03-07 10:21:21.779 +04:00 [INF] RolePrivilege with ID 1 deleted successfully
+2025-03-07 10:21:21.803 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:21:21.883 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.DeleteRoleAsync (CollegeApp) in 4485.5835ms
+2025-03-07 10:21:21.884 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.DeleteRoleAsync (CollegeApp)'
+2025-03-07 10:21:21.901 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7194/api/RolePrivilege/delete/1 - 200 null application/json; charset=utf-8 4647.4039ms
+2025-03-07 10:21:28.985 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - null null
+2025-03-07 10:21:28.991 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:21:29.007 +04:00 [INF] Route matched with {action = "GetRolePrivileges", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegesAsync() on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:21:29.187 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+2025-03-07 10:21:29.233 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:21:29.254 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp) in 246.4515ms
+2025-03-07 10:21:29.254 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegesAsync (CollegeApp)'
+2025-03-07 10:21:29.255 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/all - 200 null application/json; charset=utf-8 269.4993ms
+2025-03-07 10:24:49.200 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 10:24:49.624 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 10:24:49.625 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 10:24:49.628 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 10:24:49.628 +04:00 [INF] Hosting environment: Development
+2025-03-07 10:24:49.628 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 10:24:50.707 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 10:24:51.176 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 482.1203ms
+2025-03-07 10:24:51.200 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 10:24:51.200 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 10:24:51.200 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 10:24:51.205 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 4.9216ms
+2025-03-07 10:24:51.234 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 33.6741ms
+2025-03-07 10:24:51.287 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.2754ms
+2025-03-07 10:24:51.545 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 10:24:52.008 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 463.2705ms
+2025-03-07 10:25:24.079 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7194/api/RolePrivilege/create - application/json 122
+2025-03-07 10:25:24.136 +04:00 [INF] CORS policy execution successful.
+2025-03-07 10:25:24.146 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp)'
+2025-03-07 10:25:24.246 +04:00 [INF] Route matched with {action = "CreateRolePrivilege", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] CreateRolePrivilegeAsync(CollegeApp.Models.RolePrivilegeDTO) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:25:27.938 +04:00 [ERR] Failed executing DbCommand (135ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RolePrivileges] ([Id], [CreatedDate], [Description], [IsActive], [IsDeleted], [ModifiedDate], [RoleId], [RolePrivilegeName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-03-07 10:25:28.044 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'CollegeApp.Data.CollegeDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "RolePrivileges", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9cfc934d-78c4-4e23-bdcb-d2741a1fa80f
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "RolePrivileges", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9cfc934d-78c4-4e23-bdcb-d2741a1fa80f
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-07 10:25:28.294 +04:00 [ERR] Error creating role privilege
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "RolePrivileges", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9cfc934d-78c4-4e23-bdcb-d2741a1fa80f
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CollegeApp.Data.Repo.CollegeRepository`1.CreateAsync(T dbRecord) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Data\Repo\CollegeRepository.cs:line 23
+   at CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync(RolePrivilegeDTO dto) in C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp\Controllers\`RolePrivilegeController.cs:line 51
+2025-03-07 10:25:28.341 +04:00 [INF] Executing ObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:25:28.393 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp) in 4138.5641ms
+2025-03-07 10:25:28.394 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp)'
+2025-03-07 10:25:28.411 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7194/api/RolePrivilege/create - 500 null application/json; charset=utf-8 4332.9093ms
+2025-03-07 10:25:40.673 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7194/api/RolePrivilege/create - application/json 122
+2025-03-07 10:25:40.682 +04:00 [INF] CORS policy execution successful.
+2025-03-07 10:25:40.682 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp)'
+2025-03-07 10:25:40.683 +04:00 [INF] Route matched with {action = "CreateRolePrivilege", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] CreateRolePrivilegeAsync(CollegeApp.Models.RolePrivilegeDTO) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:25:40.884 +04:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Int32), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RolePrivileges] ([CreatedDate], [Description], [IsActive], [IsDeleted], [ModifiedDate], [RoleId], [RolePrivilegeName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-03-07 10:25:40.989 +04:00 [INF] Role privilege created successfully with ID 3
+2025-03-07 10:25:40.992 +04:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:25:41.036 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp) in 353.2855ms
+2025-03-07 10:25:41.036 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.CreateRolePrivilegeAsync (CollegeApp)'
+2025-03-07 10:25:41.037 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7194/api/RolePrivilege/create - 201 null application/json; charset=utf-8 363.8631ms
+2025-03-07 10:32:29.853 +04:00 [INF] User profile is available. Using 'C:\Users\Home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-07 10:32:30.318 +04:00 [INF] Now listening on: https://localhost:7194
+2025-03-07 10:32:30.319 +04:00 [INF] Now listening on: http://localhost:5194
+2025-03-07 10:32:30.325 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-07 10:32:30.326 +04:00 [INF] Hosting environment: Development
+2025-03-07 10:32:30.326 +04:00 [INF] Content root path: C:\Projects\CsharpFundamentals\CollegeApp\CollegeApp
+2025-03-07 10:32:31.324 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-03-07 10:32:31.830 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 513.9044ms
+2025-03-07 10:32:31.875 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-07 10:32:31.875 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-03-07 10:32:31.875 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.js - null null
+2025-03-07 10:32:31.879 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.js - 200 null application/javascript;charset=utf-8 3.1409ms
+2025-03-07 10:32:31.912 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 36.7501ms
+2025-03-07 10:32:31.963 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.1725ms
+2025-03-07 10:32:32.222 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-03-07 10:32:32.578 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 356.2054ms
+2025-03-07 10:32:40.311 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/1 - null null
+2025-03-07 10:32:40.372 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegeByIdAsync (CollegeApp)'
+2025-03-07 10:32:40.444 +04:00 [INF] Route matched with {action = "GetRolePrivilegeById", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegeByIdAsync(Int32) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:32:44.768 +04:00 [INF] Executed DbCommand (155ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-03-07 10:32:44.839 +04:00 [INF] Executing NotFoundObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:32:44.914 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegeByIdAsync (CollegeApp) in 4461.8065ms
+2025-03-07 10:32:44.916 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegeByIdAsync (CollegeApp)'
+2025-03-07 10:32:44.953 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/1 - 404 null application/json; charset=utf-8 4642.6543ms
+2025-03-07 10:32:59.921 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7194/api/RolePrivilege/3 - null null
+2025-03-07 10:32:59.927 +04:00 [INF] Executing endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegeByIdAsync (CollegeApp)'
+2025-03-07 10:32:59.927 +04:00 [INF] Route matched with {action = "GetRolePrivilegeById", controller = "RolePrivilege"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CollegeApp.Models.APIResponse]] GetRolePrivilegeByIdAsync(Int32) on controller CollegeApp.Controllers.RolePrivilegeController (CollegeApp).
+2025-03-07 10:33:00.092 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreatedDate], [r].[Description], [r].[IsActive], [r].[IsDeleted], [r].[ModifiedDate], [r].[RoleId], [r].[RolePrivilegeName]
+FROM [RolePrivileges] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-03-07 10:33:00.244 +04:00 [INF] Executing OkObjectResult, writing value of type 'CollegeApp.Models.APIResponse'.
+2025-03-07 10:33:00.252 +04:00 [INF] Executed action CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegeByIdAsync (CollegeApp) in 324.0713ms
+2025-03-07 10:33:00.252 +04:00 [INF] Executed endpoint 'CollegeApp.Controllers.RolePrivilegeController.GetRolePrivilegeByIdAsync (CollegeApp)'
+2025-03-07 10:33:00.252 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7194/api/RolePrivilege/3 - 200 null application/json; charset=utf-8 331.4091ms

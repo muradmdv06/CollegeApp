@@ -18,8 +18,13 @@ namespace CollegeApp.Data.Config
             builder.Property(n => n.IsActive).IsRequired();
             builder.Property(n => n.IsDeleted).IsRequired();
             builder.Property(n => n.CreatedDate).IsRequired();
-            builder.Property(n => n.Usertype).IsRequired();
-            
+            builder.Property(n => n.UsertypeId).IsRequired();
+
+            builder.HasOne(n => n.UserType)
+                .WithMany(n => n.Users)
+                .HasForeignKey(n => n.UsertypeId)
+                .HasConstraintName("FK_Users_UserTypes");
+
 
 
         }
