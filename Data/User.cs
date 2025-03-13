@@ -1,6 +1,6 @@
 ﻿namespace CollegeApp.Data
 {
-    public class User
+      public class User
     {
         public int Id { get; set; }
         public int Username { get; set; }
@@ -14,7 +14,6 @@
         public virtual UserType UserType { get; set; }
 
         public virtual ICollection<UserRoleMapping> UserRoleMappings { get; set; }
-
 
     }
 }
